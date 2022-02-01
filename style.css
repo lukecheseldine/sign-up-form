@@ -1,0 +1,88 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100vh;
+    background-color: #eee;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+#left {
+    display: flex;
+    background: url(img/coast.jpg) no-repeat fixed;
+    background-size: contain;
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 200px;
+    min-height: 100vh;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#logo img {
+    max-width: 100%;
+    max-height: 150px;
+}
+
+#right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#top {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: flex-end;
+
+}
+
+form {
+    justify-self: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 5px 3px 5px 1px lightgrey;
+}
+
+#bottom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+button[type='submit'] {
+    padding: 20px
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    margin: 10px;
+}
