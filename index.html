@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up</title>
     <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -30,18 +34,39 @@
             
             <form id="sign-up" action="#" >
                 <h2>Let's do this!</h2>
-                <label for="first-name">First Name</label>
-                <input name="first-name" type="text">
-                <label for="last-name">Last Name</label>
-                <input name="last-name" type="text">
-                <label for="email">Email</label>
-                <input name="email" type="text">
-                <label for="phone-number">Phone Number</label>
-                <input name="phone-number" type="text">
-                <label for="password">Password</label>
-                <input name="password" type="text">
-                <label for="confirm">Confirm Password</label>
-                <input name="confirm" type="text">
+                <div id="inputs">
+                    <div class="inputs-row">
+                        <div class="inputs-left">
+                            <label for="first-name">First Name</label>
+                            <input name="first-name" type="text">
+                        </div>
+                        <div class="inputs-right">
+                            <label for="last-name">Last Name</label>
+                            <input class="focus" name="last-name" type="text">
+                        </div>
+                    </div>
+                    <div class="inputs-row">
+                        <div class="inputs-left">
+                            <label for="email">Email</label>
+                            <input name="email" type="text">
+                        </div>
+                        <div class="inputs-right">
+                            <label for="phone-number">Phone Number</label>
+                            <input name="phone-number" type="text">
+                        </div>
+                    </div>
+                    <div class="inputs-row">
+                        <div class="inputs-left">
+                            <label for="password">Password</label>
+                            <input class="error" name="password" type="text">
+                            <div class="error-message">* Passwords do not match</div>
+                        </div>
+                        <div class="inputs-right">
+                            <label for="confirm">Confirm Password</label>
+                            <input class="error" name="confirm" type="text">
+                        </div>
+                    </div>
+                </div>
             </form>
             
             <div id="bottom">
